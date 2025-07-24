@@ -14,56 +14,55 @@
     <!-- Favicon -->
     <link rel="icon" href="SC Mecanica.avif" type="image/svg+xml">
 
-    <!-- Preconexões para CDNs -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Swiper's CSS for Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://unpkg.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <!-- Pré-carregar recursos críticos -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="caminhao.avif" as="image">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-    <!-- CSS Crítico Inline -->
+    <!-- Custom Styles -->
     <style>
-        /* Estilos críticos (minificados) */
-        body{font-family:'Roboto',sans-serif;background:#fff;color:#1F2937;overflow-x:hidden}.font-bebas{font-family:'Bebas Neue',sans-serif}.whatsapp-green-btn{background:#25D366;transition:all .3s ease}.whatsapp-green-btn:hover{transform:scale(1.05);box-shadow:0 0 20px rgba(37,211,102,.5)}.section-title{font-family:'Bebas Neue',sans-serif;font-weight:600;font-size:2.75rem;line-height:1.1;text-transform:uppercase}@media (min-width:768px){.section-title{font-size:4rem}}#header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 4px 6px rgba(0,0,0,.1);padding:1rem 0}.swiper-pagination-bullet-active{background:#FF0000!important}.swiper-button-next,.swiper-button-prev{color:#FF0000!important}img{max-width:100%;height:auto}.hero-section{min-height:calc(100vh - 88px);display:flex;align-items:center;justify-content:center}.bg-gray-50{background-color:#f9fafb}.border-gray-200{border-color:#e5e7eb}
-    </style>
-    
-    <!-- CSS não crítico (carregado assincronamente) -->
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    </noscript>
-    
-    <!-- Tailwind CSS (carregado assincronamente) -->
-    <script>
-        // Carregar Tailwind CSS assincronamente
-        setTimeout(() => {
-            const script = document.createElement('script');
-            script.src = 'https://cdn.tailwindcss.com';
-            document.head.appendChild(script);
-        }, 0);
-    </script>
-    
-    <!-- Fontes com display:swap -->
-    <style>
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FFFFFF;
+            color: #1F2937; /* Gray 800 */
         }
-        @font-face {
-            font-family: 'Bebas Neue';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .whatsapp-green-btn {
+            background-color: #25D366;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-green-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+        }
+        .section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 600;
+            font-size: 2.75rem; /* 44px */
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #FF0000 !important;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #FF0000 !important;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 4rem; /* 64px */
+            }
         }
     </style>
 </head>
@@ -74,7 +73,7 @@
     <header id="header" class="py-4 sticky top-0 left-0 right-0 z-50 bg-white shadow-lg">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="#hero" class="flex items-center gap-3">
-                <img src="logo.svg" alt="SC Mecânica Diesel Logo" width="56" height="56" class="h-14" onerror="this.style.display='none'">
+                <img src="logo.svg" alt="SC Mecânica Diesel Logo" class="h-14" onerror="this.style.display='none'">
             </a>
             <nav class="hidden md:flex items-center gap-8 font-semibold text-lg">
                 <a href="#hero" class="hover:text-[#FF0000] transition-colors">Início</a>
@@ -117,7 +116,7 @@
                             </a>
                         </div>
                         <div class="relative flex justify-center md:justify-end">
-                            <img src="caminhao.avif" alt="Caminhão SC Mecânica" width="800" height="600" loading="eager" class="w-full max-w-lg lg:max-w-xl xl:max-w-3xl h-auto" onerror="this.src='caminhão.avif'">
+                            <img src="caminhao.avif" alt="Caminhão SC Mecânica" class="w-full max-w-lg lg:max-w-xl xl:max-w-3xl h-auto" onerror="this.src='caminhão.avif'">
                         </div>
                     </div>
                 </div>
@@ -135,7 +134,7 @@
                         <!-- Card Caixa de Câmbio -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                                <img src="cambio.avif" alt="Serviço de Caixa de Câmbio" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Câmbio'">
+                                <img src="cambio.avif" alt="Serviço de Caixa de Câmbio" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Câmbio'">
                                 <div class="p-6 flex flex-col flex-grow text-center">
                                     <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">CAIXA DE CÂMBIO</h3>
                                     <p class="text-gray-600 flex-grow">Especialistas em caixas de câmbio manuais e automatizadas, com diagnóstico preciso e reparos de qualidade.</p>
@@ -145,7 +144,7 @@
                         <!-- Card Diferencial -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                                <img src="diferencial.avif" alt="Serviço de Diferencial" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Diferencial'">
+                                <img src="diferencial.avif" alt="Serviço de Diferencial" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Diferencial'">
                                 <div class="p-6 flex flex-col flex-grow text-center">
                                     <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">DIFERENCIAL</h3>
                                     <p class="text-gray-600 flex-grow">Manutenção e reparo completo de diferenciais, garantindo durabilidade e estabilidade para seu veículo.</p>
@@ -155,7 +154,7 @@
                         <!-- Card Direção Hidráulica -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                                <img src="direção.avif" alt="Serviço de Direção Hidráulica" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Direção'">
+                                <img src="direção.avif" alt="Serviço de Direção Hidráulica" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Direção'">
                                 <div class="p-6 flex flex-col flex-grow text-center">
                                     <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">DIREÇÃO HIDRÁULICA</h3>
                                     <p class="text-gray-600 flex-grow">Serviço especializado em direção hidráulica, com manutenção preventiva e corretiva para sua segurança.</p>
@@ -165,7 +164,7 @@
                          <!-- Card Parte Elétrica -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                                <img src="eletrica.avif" alt="Serviço de Parte Elétrica" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Elétrica'">
+                                <img src="eletrica.avif" alt="Serviço de Parte Elétrica" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Elétrica'">
                                 <div class="p-6 flex flex-col flex-grow text-center">
                                     <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">PARTE ELÉTRICA</h3>
                                     <p class="text-gray-600 flex-grow">Soluções completas para o sistema elétrico, incluindo diagnóstico eletrônico, reparo de chicotes e sensores.</p>
@@ -175,7 +174,7 @@
                         <!-- Card Embreagens -->
                         <div class="swiper-slide h-auto">
                            <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                                <img src="embreagem.avif" alt="Serviço de Embreagem" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Embreagem'">
+                                <img src="embreagem.avif" alt="Serviço de Embreagem" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Embreagem'">
                                 <div class="p-6 flex flex-col flex-grow text-center">
                                     <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">EMBREAGENS</h3>
                                     <p class="text-gray-600 flex-grow">Substituição e manutenção de embreagens, usando peças de procedência para maior durabilidade.</p>
@@ -194,7 +193,7 @@
                 <div class="hidden xl:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
                     <!-- Card Caixa de Câmbio -->
                     <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                        <img src="cambio.avif" alt="Serviço de Caixa de Câmbio" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Câmbio'">
+                        <img src="cambio.avif" alt="Serviço de Caixa de Câmbio" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Câmbio'">
                         <div class="p-6 flex flex-col flex-grow text-center">
                             <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">CAIXA DE CÂMBIO</h3>
                             <p class="text-gray-600 flex-grow">Especialistas em caixas de câmbio manuais e automatizadas, com diagnóstico preciso e reparos de qualidade.</p>
@@ -202,7 +201,7 @@
                     </div>
                     <!-- Card Diferencial -->
                     <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                        <img src="diferencial.avif" alt="Serviço de Diferencial" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Diferencial'">
+                        <img src="diferencial.avif" alt="Serviço de Diferencial" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Diferencial'">
                         <div class="p-6 flex flex-col flex-grow text-center">
                             <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">DIFERENCIAL</h3>
                             <p class="text-gray-600 flex-grow">Manutenção e reparo completo de diferenciais, garantindo durabilidade e estabilidade para seu veículo.</p>
@@ -210,7 +209,7 @@
                     </div>
                     <!-- Card Direção Hidráulica -->
                     <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                        <img src="direção.avif" alt="Serviço de Direção Hidráulica" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Direção'">
+                        <img src="direção.avif" alt="Serviço de Direção Hidráulica" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Direção'">
                         <div class="p-6 flex flex-col flex-grow text-center">
                             <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">DIREÇÃO HIDRÁULICA</h3>
                             <p class="text-gray-600 flex-grow">Serviço especializado em direção hidráulica, com manutenção preventiva e corretiva para sua segurança.</p>
@@ -218,7 +217,7 @@
                     </div>
                      <!-- Card Parte Elétrica -->
                     <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                        <img src="eletrica.avif" alt="Serviço de Parte Elétrica" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Elétrica'">
+                        <img src="eletrica.avif" alt="Serviço de Parte Elétrica" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Elétrica'">
                         <div class="p-6 flex flex-col flex-grow text-center">
                             <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">PARTE ELÉTRICA</h3>
                             <p class="text-gray-600 flex-grow">Soluções completas para o sistema elétrico, com diagnóstico eletrônico, reparo de chicotes, sensores e módulos da caixa de câmbio..</p>
@@ -226,7 +225,7 @@
                     </div>
                     <!-- Card Embreagens -->
                     <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                        <img src="embreagem.avif" alt="Serviço de Embreagem" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Embreagem'">
+                        <img src="embreagem.avif" alt="Serviço de Embreagem" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Embreagem'">
                         <div class="p-6 flex flex-col flex-grow text-center">
                             <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">EMBREAGENS</h3>
                             <p class="text-gray-600 flex-grow">Substituição e manutenção de embreagens, usando peças de procedência para maior durabilidade.</p>
@@ -294,7 +293,7 @@
                         </ul>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="sc.avif" alt="Oficina SC Mecânica" width="600" height="500" loading="lazy" class="rounded-2xl shadow-2xl w-full h-full object-cover max-h-[500px]" onerror="this.src='https://placehold.co/600x500/cccccc/333333?text=SC+Mecânica'">
+                        <img src="sc.avif" alt="Oficina SC Mecânica" class="rounded-2xl shadow-2xl w-full h-full object-cover max-h-[500px]" onerror="this.src='https://placehold.co/600x500/cccccc/333333?text=SC+Mecânica'">
                     </div>
                 </div>
             </div>
@@ -306,12 +305,12 @@
                 <h2 class="section-title text-center mb-12">Marcas que <span class="text-[#FF0000]">Trabalhamos</span></h2>
                 <div class="swiper-container-brands">
                     <div class="swiper-wrapper flex items-center">
-                        <div class="swiper-slide"><img src="Logo-Volvo.png.webp" alt="Volvo" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Volvo'"></div>
-                        <div class="swiper-slide"><img src="Logo-Iveco.png.webp" alt="Iveco" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Iveco'"></div>
-                        <div class="swiper-slide"><img src="Logo-Volkswagen.png.webp" alt="Volkswagen" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Volkswagen'"></div>
-                        <div class="swiper-slide"><img src="Logo-Ford.png.webp" alt="Ford" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Ford'"></div>
-                        <div class="swiper-slide"><img src="Logo-Mercedes-Benz.png.webp" alt="Mercedes-Benz" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Mercedes'"></div>
-                        <div class="swiper-slide"><img src="Logo-Scania.png.webp" alt="Scania" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Scania'"></div>
+                        <div class="swiper-slide"><img src="Logo-Volvo.png.webp" alt="Volvo" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Volvo'"></div>
+                        <div class="swiper-slide"><img src="Logo-Iveco.png.webp" alt="Iveco" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Iveco'"></div>
+                        <div class="swiper-slide"><img src="Logo-Volkswagen.png.webp" alt="Volkswagen" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Volkswagen'"></div>
+                        <div class="swiper-slide"><img src="Logo-Ford.png.webp" alt="Ford" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Ford'"></div>
+                        <div class="swiper-slide"><img src="Logo-Mercedes-Benz.png.webp" alt="Mercedes-Benz" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Mercedes'"></div>
+                        <div class="swiper-slide"><img src="Logo-Scania.png.webp" alt="Scania" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Scania'"></div>
                     </div>
                 </div>
             </div>
@@ -330,7 +329,7 @@
                             <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
                         </div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo do Google" width="48" height="48" loading="lazy" class="h-10 md:h-12">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo do Google" class="h-10 md:h-12">
                      </div>
                  </a>
                 <div class="swiper-container-reviews">
@@ -364,7 +363,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center">
-                     <img src="SC Mecanica.avif" alt="SC Mecânica Diesel Logo" width="96" height="96" loading="lazy" class="h-24 mb-4" onerror="this.style.display='none'">
+                     <img src="SC Mecanica.avif" alt="SC Mecânica Diesel Logo" class="h-24 mb-4" onerror="this.style.display='none'">
                      <p class="text-sm text-gray-400 mb-4">Siga-nos nas redes sociais</p>
                      <div class="flex gap-6">
                          <a href="https://www.instagram.com/scmecanica_autopecas" target="_blank" class="text-3xl hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
@@ -390,98 +389,102 @@
         <i class="fa-brands fa-whatsapp fa-2x"></i>
     </a>
 
-    <!-- Swiper's JS (carregado com defer) -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-    
-    <!-- Scripts minificados (carregados com defer) -->
-    <script defer>
-        // Menu Mobile
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        menuButton&&menuButton.addEventListener('click',()=>{
-            mobileMenu.classList.toggle('hidden');
-            menuIcon.classList.toggle('fa-bars');
-            menuIcon.classList.toggle('fa-xmark');
-        });
-        document.querySelectorAll('.nav-link-mobile').forEach(link=>{
-            link.addEventListener('click',()=>{
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.add('fa-bars');
-                menuIcon.classList.remove('fa-xmark');
+    <!-- Swiper's JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('fa-bars');
+                menuIcon.classList.toggle('fa-xmark');
             });
-        });
 
-        // Inicializar Swiper quando disponível
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof Swiper !== 'undefined') {
-                new Swiper('.swiper-container-brands', {
-                    loop: true, 
-                    slidesPerView: 3, 
-                    spaceBetween: 20, 
-                    autoplay: { delay: 2500, disableOnInteraction: false },
-                    breakpoints: { 
-                        640: { slidesPerView: 4 }, 
-                        768: { slidesPerView: 5 }, 
-                        1024: { slidesPerView: 6 } 
-                }});
-                
-                new Swiper('.swiper-container-servicos', {
-                    loop: true,
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    pagination: {
-                        el: '.swiper-pagination-servicos',
-                        clickable: true,
-                    },
-                    breakpoints: {
-                        640: { slidesPerView: 2, spaceBetween: 20 },
-                        1024: { slidesPerView: 3, spaceBetween: 30 }
-                }});
-                
-                // Carregar avaliações
-                const reviews = [
-                    { name: "Guilherme Medeiros", stars: 5, date: "1 semana atrás", text: "Empresa tem um compromisso claro com a qualidade e a satisfação do cliente. É uma empresa que superou nossas expectativas. Recomendo." },
-                    { name: "Daniel Anziliero", stars: 5, date: "1 semana atrás", text: "Ótimo atendimento, e serviço de excelência de toda a equipe SC mecânica." },
-                    { name: "Eduardo Bringhenti", stars: 5, date: "2 semanas atrás", text: "Atendimento excelente e serviço de alta qualidade! A equipe da SC Mecânica é muito profissional, ágil e sempre busca a melhor solução. Recomendo fortemente!" },
-                    { name: "Wilk Biazotto", stars: 5, date: "1 mês atrás", text: "Pra quem precisa de solução, Silvonei e os guri dão um jeito, o preço é alto, mas justos, pois esse resolve!!!" },
-                    { name: "Jucemar De Souza", stars: 5, date: "1 mês atrás", text: "Recomendo ótimo atendimento" },
-                    { name: "Douglas Tormen", stars: 5, date: "3 meses atrás", text: "Serviço de qualidade e o pessoal e bem atencioso." },
-                    { name: "Vanderlei Da Silva", stars: 5, date: "2 anos atrás", text: "Ótimo lugar para manutenção do seu caminhao" },
-                    { name: "Daian Schmitt", stars: 5, date: "6 meses atrás", text: "Serviço de primeira qualidade, recomendo!" }
-                ];
-                
-                const reviewsWrapper = document.getElementById('reviews-wrapper');
-                if(reviewsWrapper){
-                    reviews.forEach(review => {
-                        let starsHTML = Array(5).fill(0).map((_, i) => `<i class="fa-solid fa-star ${i < review.stars ? 'text-yellow-400' : 'text-gray-600'}"></i>`).join('');
-                        reviewsWrapper.innerHTML += `
-                            <div class="swiper-slide h-auto">
-                                <div class="bg-gray-100 p-8 rounded-2xl text-left h-full flex flex-col shadow-2xl">
-                                    <div class="flex items-center mb-4">
-                                        <div class="flex-grow">
-                                            <p class="font-bold text-gray-900">${review.name}</p>
-                                            <p class="text-xs text-gray-500">${review.date}</p>
-                                        </div>
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo do Google" class="w-6 h-6 ml-auto">
-                                    </div>
-                                    <div class="mb-4">${starsHTML}</div>
-                                    <p class="text-gray-600 italic flex-grow">"${review.text}"</p>
-                                </div>
-                            </div>`;
-                    });
+            document.querySelectorAll('.nav-link-mobile').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.add('fa-bars');
+                    menuIcon.classList.remove('fa-xmark');
+                });
+            });
+
+            new Swiper('.swiper-container-brands', {
+                loop: true, 
+                slidesPerView: 3, 
+                spaceBetween: 20, 
+                autoplay: { delay: 2500, disableOnInteraction: false },
+                breakpoints: { 
+                    640: { slidesPerView: 4 }, 
+                    768: { slidesPerView: 5 }, 
+                    1024: { slidesPerView: 6 } 
                 }
-                
-                new Swiper('.swiper-container-reviews', {
-                    loop: true, slidesPerView: 1, spaceBetween: 30, autoplay: { delay: 5000, disableOnInteraction: false },
-                    pagination: { el: '.swiper-pagination-reviews', clickable: true },
-                    breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+            });
+
+            new Swiper('.swiper-container-servicos', {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination-servicos',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                }
+            });
+
+            const reviews = [
+                { name: "Guilherme Medeiros", avatar: "", stars: 5, date: "1 semana atrás", text: "Empresa tem um compromisso claro com a qualidade e a satisfação do cliente. É uma empresa que superou nossas expectativas. Recomendo." },
+                { name: "Daniel Anziliero", avatar: "", stars: 5, date: "1 semana atrás", text: "Ótimo atendimento, e serviço de excelência de toda a equipe SC mecânica." },
+                { name: "Eduardo Bringhenti", avatar: "", stars: 5, date: "2 semanas atrás", text: "Atendimento excelente e serviço de alta qualidade! A equipe da SC Mecânica é muito profissional, ágil e sempre busca a melhor solução. Recomendo fortemente!" },
+                { name: "Wilk Biazotto", avatar: "", stars: 5, date: "1 mês atrás", text: "Pra quem precisa de solução, Silvonei e os guri dão um jeito, o preço é alto, mas justos, pois esse resolve!!!" },
+                { name: "Jucemar De Souza", avatar: "", stars: 5, date: "1 mês atrás", text: "Recomendo ótimo atendimento" },
+                { name: "Douglas Tormen", avatar: "", stars: 5, date: "3 meses atrás", text: "Serviço de qualidade e o pessoal e bem atencioso." },
+                { name: "Vanderlei Da Silva", avatar: "", stars: 5, date: "2 anos atrás", text: "Ótimo lugar para manutenção do seu caminhao" },
+                { name: "Daian Schmitt", avatar: "", stars: 5, date: "6 meses atrás", text: "Serviço de primeira qualidade, recomendo!" }
+            ];
+
+            const reviewsWrapper = document.getElementById('reviews-wrapper');
+            if(reviewsWrapper){
+                reviews.forEach(review => {
+                    let starsHTML = Array(5).fill(0).map((_, i) => `<i class="fa-solid fa-star ${i < review.stars ? 'text-yellow-400' : 'text-gray-600'}"></i>`).join('');
+                    const reviewHTML = `
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-gray-100 p-8 rounded-2xl text-left h-full flex flex-col shadow-2xl">
+                                <div class="flex items-center mb-4">
+                                    <div class="flex-grow">
+                                        <p class="font-bold text-gray-900">${review.name}</p>
+                                        <p class="text-xs text-gray-500">${review.date}</p>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo do Google" class="w-6 h-6 ml-auto">
+                                </div>
+                                <div class="mb-4">${starsHTML}</div>
+                                <p class="text-gray-600 italic flex-grow">"${review.text}"</p>
+                            </div>
+                        </div>`;
+                    reviewsWrapper.innerHTML += reviewHTML;
                 });
             }
+
+            new Swiper('.swiper-container-reviews', {
+                loop: true, slidesPerView: 1, spaceBetween: 30, autoplay: { delay: 5000, disableOnInteraction: false },
+                pagination: { el: '.swiper-pagination-reviews', clickable: true },
+                breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+            });
         });
     </script>
 </body>
