@@ -3,67 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
+
+    <!-- SEO Meta Tags Essenciais -->
     <title>SC Mecânica Diesel - Oficina Especializada em Chapecó</title>
     <meta name="description" content="Oficina mecânica em Chapecó especialista em conserto de caixa de câmbio, diferencial, direção hidráulica, parte elétrica e embreagens para caminhões. Venda de peças ZF e EATON.">
     <meta name="keywords" content="conserto caixa de câmbio Chapecó, reparo diferencial Chapecó, reparo direção hidráulica Chapecó, oficina especializada em câmbio em Chapecó, conserto de diferencial em Chapecó, oficina mecânica em Chapecó, auto peças Chapecó SC, oficina especializada Volvo em Chapecó, conserto câmbio Scania Chapecó, reparo caixa I-Shift Volvo Chapecó, peças ZF Chapecó, peças EATON Chapecó, parte elétrica caminhão Chapecó, conserto embreagem caminhão Chapecó">
     <meta name="author" content="SC Mecânica Diesel">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.scmecanica.com.br"> <!-- URL OFICIAL DO SITE -->
 
     <!-- Favicon -->
     <link rel="icon" href="SC Mecanica.avif" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- Opcional, mas recomendado -->
+
+    <!-- Preconexões para CDNs -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    
+    <!-- Pré-carregar recursos críticos -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="caminhao.avif" as="image">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- CSS não crítico (carregado assincronamente) -->
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    </noscript>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-    <!-- Swiper's CSS for Carousel -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    <!-- Custom Styles -->
+    <!-- Dados Estruturados (JSON-LD) para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "SC Mecânica Diesel",
+      "description": "Oficina mecânica especializada em caminhões em Chapecó - SC. Conserto de caixa de câmbio, diferencial, direção hidráulica, parte elétrica e venda de peças.",
+      "telephone": "+5549988557543",
+      "email": "scmecanicaautopecas@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Arlindo Agne, 713 - Lajeado",
+        "addressLocality": "Chapecó",
+        "addressRegion": "SC",
+        "postalCode": "89804-848",
+        "addressCountry": "BR"
+      },
+      "openingHours": [
+        "Mo-Fr 09:00-18:00",
+        "Sa 09:00-13:00"
+      ],
+      "url": "https://www.scmecanica.com.br/",
+      "logo": "https://www.scmecanica.com.br/logo.svg",
+      "image": "https://www.scmecanica.com.br/sc.avif",
+      "priceRange": "$$",
+      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.932821217731!2d-52.65171788812676!3d-27.1272099946408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b5e828a2a573%3A0x4a4f8f4a3390c5d2!2sR.%20Arlindo%20Agne%2C%20713%20-%20Lajeado%2C%20Chapec%C3%B3%20-%20SC%2C%2089804-848!5e0!3m2!1spt-BR!2sbr!4v1719262118465!5m2!1spt-BR!2sbr"
+    }
+    </script>
+    
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #FFFFFF;
-            color: #1F2937; /* Gray 800 */
-        }
-        .font-bebas {
-            font-family: 'Bebas Neue', sans-serif;
-        }
-        .whatsapp-green-btn {
-            background-color: #25D366;
-            transition: all 0.3s ease;
-        }
-        .whatsapp-green-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
-        }
-        .section-title {
-            font-family: 'Bebas Neue', sans-serif;
-            font-weight: 600;
-            font-size: 2.75rem; /* 44px */
-            line-height: 1.1;
-            text-transform: uppercase;
-        }
-        .swiper-pagination-bullet-active {
-            background-color: #FF0000 !important;
-        }
-        .swiper-button-next, .swiper-button-prev {
-            color: #FF0000 !important;
-        }
-        @media (min-width: 768px) {
-            .section-title {
-                font-size: 4rem; /* 64px */
-            }
-        }
+      /* Estilos críticos (minificados) */
+      body{font-family:'Roboto',sans-serif;background:#fff;color:#1F2937;overflow-x:hidden}
+      .font-bebas{font-family:'Bebas Neue',sans-serif}
+      .whatsapp-green-btn{background:#25D366;transition:all .3s ease}
+      .whatsapp-green-btn:hover{transform:scale(1.05);box-shadow:0 0 20px rgba(37,211,102,.5)}
+      .section-title{font-family:'Bebas Neue',sans-serif;font-weight:600;font-size:2.75rem;line-height:1.1;text-transform:uppercase}
+      @media (min-width:768px){.section-title{font-size:4rem}}
+      #header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 4px 6px rgba(0,0,0,.1);padding:1rem 0}
+      .swiper-pagination-bullet-active{background:#FF0000!important}
+      .swiper-button-next,.swiper-button-prev{color:#FF0000!important}
+      img{max-width:100%;height:auto}
+      .hero-section{min-height:calc(100vh - 88px);display:flex;align-items:center;justify-content:center}
+      .bg-gray-50{background-color:#f9fafb}
+      .border-gray-200{border-color:#e5e7eb}
     </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -72,20 +90,22 @@
     <!-- ===== Header ===== -->
     <header id="header" class="py-4 sticky top-0 left-0 right-0 z-50 bg-white shadow-lg">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="#hero" class="flex items-center gap-3">
-                <img src="logo.svg" alt="SC Mecânica Diesel Logo" class="h-14" onerror="this.style.display='none'">
+            <a href="#hero" class="flex items-center gap-3" aria-label="Página inicial da SC Mecânica Diesel">
+                <img src="logo.svg" alt="SC Mecânica Diesel Logo" width="56" height="56" class="h-14" onerror="this.style.display='none'">
             </a>
-            <nav class="hidden md:flex items-center gap-8 font-semibold text-lg">
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-lg" aria-label="Navegação principal">
                 <a href="#hero" class="hover:text-[#FF0000] transition-colors">Início</a>
                 <a href="#servicos" class="hover:text-[#FF0000] transition-colors">Serviços</a>
                 <a href="#sobre" class="hover:text-[#FF0000] transition-colors">Diferenciais</a>
                 <a href="#contato" class="hover:text-[#FF0000] transition-colors">Contato</a>
             </nav>
             <div class="flex items-center gap-4">
-                 <a href="https://wa.me/554988557543" target="_blank" class="hidden sm:inline-flex items-center gap-2 whatsapp-green-btn text-white font-bold text-sm py-3 px-6 rounded-lg">
-                     <i class="fa-brands fa-whatsapp"></i><span>FALE CONOSCO</span>
+                 <a href="https://wa.me/554988557543" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 whatsapp-green-btn text-white font-bold text-sm py-3 px-6 rounded-lg">
+                     <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>FALE CONOSCO</span>
                  </a>
-                <button id="menu-button" class="md:hidden text-2xl"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
+                <button id="menu-button" class="md:hidden text-2xl" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-menu">
+                    <i id="menu-icon" class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
         <!-- Mobile Menu -->
@@ -103,7 +123,6 @@
         <!-- ===== Hero Section ===== -->
         <section id="hero" class="relative bg-white">
             <div class="container mx-auto px-4 flex flex-col min-h-[calc(100vh-88px)]">
-                <!-- Main Content -->
                 <div class="flex-grow flex items-center pt-12 md:pt-0">
                     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 w-full">
                         <div class="text-center md:text-left">
@@ -111,12 +130,12 @@
                                 A Oficina Mecânica que seu <span class="text-[#FF0000]">Caminhão Merece</span> em Chapecó - SC
                             </h1>
                             <p class="mt-4 text-lg text-gray-600">Confiança, agilidade e a melhor tecnologia para cuidar do seu pesado.</p>
-                            <a href="https://wa.me/554988557543?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20orçamento." target="_blank" class="whatsapp-green-btn mt-8 inline-flex items-center gap-3 text-white font-bold py-4 px-10 rounded-lg text-lg">
-                                <i class="fa-brands fa-whatsapp fa-lg"></i> FALE CONOSCO NO WHATSAPP
+                            <a href="https://wa.me/554988557543?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="whatsapp-green-btn mt-8 inline-flex items-center gap-3 text-white font-bold py-4 px-10 rounded-lg text-lg">
+                                <i class="fa-brands fa-whatsapp fa-lg" aria-hidden="true"></i> FALE CONOSCO NO WHATSAPP
                             </a>
                         </div>
                         <div class="relative flex justify-center md:justify-end">
-                            <img src="caminhao.avif" alt="Caminhão SC Mecânica" class="w-full max-w-lg lg:max-w-xl xl:max-w-3xl h-auto" onerror="this.src='caminhão.avif'">
+                            <img src="caminhão.avif" alt="Caminhão SC Mecânica" width="800" height="600" loading="eager" class="w-full max-w-lg lg:max-w-xl xl:max-w-3xl h-auto" onerror="this.src='caminhao.avif'">
                         </div>
                     </div>
                 </div>
@@ -134,7 +153,7 @@
                         <!-- Card Caixa de Câmbio -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                                <img src="cambio.avif" alt="Serviço de Caixa de Câmbio" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Câmbio'">
+                                <img src="cambio.avif" alt="Serviço de Caixa de Câmbio" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Câmbio'">
                                 <div class="p-6 flex flex-col flex-grow text-center">
                                     <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">CAIXA DE CÂMBIO</h3>
                                     <p class="text-gray-600 flex-grow">Especialistas em caixas de câmbio manuais e automatizadas, com diagnóstico preciso e reparos de qualidade.</p>
@@ -144,7 +163,7 @@
                         <!-- Card Diferencial -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                                <img src="diferencial.avif" alt="Serviço de Diferencial" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Diferencial'">
+                                <img src="diferencial.avif" alt="Serviço de Diferencial" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Diferencial'">
                                 <div class="p-6 flex flex-col flex-grow text-center">
                                     <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">DIFERENCIAL</h3>
                                     <p class="text-gray-600 flex-grow">Manutenção e reparo completo de diferenciais, garantindo durabilidade e estabilidade para seu veículo.</p>
@@ -154,7 +173,7 @@
                         <!-- Card Direção Hidráulica -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                                <img src="direção.avif" alt="Serviço de Direção Hidráulica" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Direção'">
+                                <img src="direção.avif" alt="Serviço de Direção Hidráulica" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Direção'">
                                 <div class="p-6 flex flex-col flex-grow text-center">
                                     <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">DIREÇÃO HIDRÁULICA</h3>
                                     <p class="text-gray-600 flex-grow">Serviço especializado em direção hidráulica, com manutenção preventiva e corretiva para sua segurança.</p>
@@ -164,7 +183,7 @@
                          <!-- Card Parte Elétrica -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                                <img src="eletrica.avif" alt="Serviço de Parte Elétrica" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Elétrica'">
+                                <img src="eletrica.avif" alt="Serviço de Parte Elétrica" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Elétrica'">
                                 <div class="p-6 flex flex-col flex-grow text-center">
                                     <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">PARTE ELÉTRICA</h3>
                                     <p class="text-gray-600 flex-grow">Soluções completas para o sistema elétrico, incluindo diagnóstico eletrônico, reparo de chicotes e sensores.</p>
@@ -174,7 +193,7 @@
                         <!-- Card Embreagens -->
                         <div class="swiper-slide h-auto">
                            <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                                <img src="embreagem.avif" alt="Serviço de Embreagem" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Embreagem'">
+                                <img src="embreagem.avif" alt="Serviço de Embreagem" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Embreagem'">
                                 <div class="p-6 flex flex-col flex-grow text-center">
                                     <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">EMBREAGENS</h3>
                                     <p class="text-gray-600 flex-grow">Substituição e manutenção de embreagens, usando peças de procedência para maior durabilidade.</p>
@@ -193,7 +212,7 @@
                 <div class="hidden xl:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
                     <!-- Card Caixa de Câmbio -->
                     <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                        <img src="cambio.avif" alt="Serviço de Caixa de Câmbio" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Câmbio'">
+                        <img src="cambio.avif" alt="Serviço de Caixa de Câmbio" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Câmbio'">
                         <div class="p-6 flex flex-col flex-grow text-center">
                             <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">CAIXA DE CÂMBIO</h3>
                             <p class="text-gray-600 flex-grow">Especialistas em caixas de câmbio manuais e automatizadas, com diagnóstico preciso e reparos de qualidade.</p>
@@ -201,7 +220,7 @@
                     </div>
                     <!-- Card Diferencial -->
                     <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                        <img src="diferencial.avif" alt="Serviço de Diferencial" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Diferencial'">
+                        <img src="diferencial.avif" alt="Serviço de Diferencial" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Diferencial'">
                         <div class="p-6 flex flex-col flex-grow text-center">
                             <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">DIFERENCIAL</h3>
                             <p class="text-gray-600 flex-grow">Manutenção e reparo completo de diferenciais, garantindo durabilidade e estabilidade para seu veículo.</p>
@@ -209,7 +228,7 @@
                     </div>
                     <!-- Card Direção Hidráulica -->
                     <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                        <img src="direção.avif" alt="Serviço de Direção Hidráulica" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Direção'">
+                        <img src="direção.avif" alt="Serviço de Direção Hidráulica" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Direção'">
                         <div class="p-6 flex flex-col flex-grow text-center">
                             <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">DIREÇÃO HIDRÁULICA</h3>
                             <p class="text-gray-600 flex-grow">Serviço especializado em direção hidráulica, com manutenção preventiva e corretiva para sua segurança.</p>
@@ -217,7 +236,7 @@
                     </div>
                      <!-- Card Parte Elétrica -->
                     <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                        <img src="eletrica.avif" alt="Serviço de Parte Elétrica" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Elétrica'">
+                        <img src="eletrica.avif" alt="Serviço de Parte Elétrica" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Elétrica'">
                         <div class="p-6 flex flex-col flex-grow text-center">
                             <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">PARTE ELÉTRICA</h3>
                             <p class="text-gray-600 flex-grow">Soluções completas para o sistema elétrico, com diagnóstico eletrônico, reparo de chicotes, sensores e módulos da caixa de câmbio..</p>
@@ -225,7 +244,7 @@
                     </div>
                     <!-- Card Embreagens -->
                     <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col group h-full">
-                        <img src="embreagem.avif" alt="Serviço de Embreagem" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Embreagem'">
+                        <img src="embreagem.avif" alt="Serviço de Embreagem" width="400" height="300" loading="lazy" class="w-full h-40 object-cover" onerror="this.src='https://placehold.co/400x300/cccccc/FF0000?text=Embreagem'">
                         <div class="p-6 flex flex-col flex-grow text-center">
                             <h3 class="font-bebas text-3xl mb-3 text-[#241d23]">EMBREAGENS</h3>
                             <p class="text-gray-600 flex-grow">Substituição e manutenção de embreagens, usando peças de procedência para maior durabilidade.</p>
@@ -233,8 +252,8 @@
                     </div>
                 </div>
                 <div class="mt-12 text-center">
-                    <a href="https://wa.me/554988557543?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços." target="_blank" class="whatsapp-green-btn inline-flex items-center gap-3 text-white font-bold py-4 px-10 rounded-lg text-lg">
-                        <i class="fa-brands fa-whatsapp fa-lg"></i> FAÇA UM ORÇAMENTO
+                    <a href="https://wa.me/554988557543?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços." target="_blank" rel="noopener noreferrer" class="whatsapp-green-btn inline-flex items-center gap-3 text-white font-bold py-4 px-10 rounded-lg text-lg">
+                        <i class="fa-brands fa-whatsapp fa-lg" aria-hidden="true"></i> FAÇA UM ORÇAMENTO
                     </a>
                 </div>
             </div>
@@ -245,9 +264,9 @@
             <div class="container mx-auto px-4 text-center">
                  <h2 class="section-title mb-6">Novidade: <span class="text-[#FF0000]">Venda de Peças</span></h2>
                  <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-8">Agora, além dos nossos serviços especializados, também disponibilizamos peças de alta qualidade das marcas <strong class="text-gray-900">ZF</strong> e <strong class="text-gray-900">EATON</strong> diretamente para nossos clientes, garantindo durabilidade e o melhor desempenho.</p>
-                 <a href="https://wa.me/554988557543?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20venda%20de%20peças." target="_blank" class="whatsapp-green-btn inline-flex items-center gap-3 text-white font-bold py-4 px-10 rounded-lg text-lg">
-                    <i class="fa-brands fa-whatsapp fa-lg"></i> CONSULTE NOSSO ESTOQUE
-                </a>
+                 <a href="https://wa.me/554988557543?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20venda%20de%20peças." target="_blank" rel="noopener noreferrer" class="whatsapp-green-btn inline-flex items-center gap-3 text-white font-bold py-4 px-10 rounded-lg text-lg">
+                     <i class="fa-brands fa-whatsapp fa-lg" aria-hidden="true"></i> CONSULTE NOSSO ESTOQUE
+                 </a>
             </div>
         </section>
 
@@ -275,25 +294,25 @@
                         <p class="font-bebas text-2xl text-gray-500 mb-8 md:text-left">Desde 2020 cuidando do seu pesado.</p>
                         <ul class="space-y-5 text-gray-600">
                             <li class="flex items-start text-left">
-                                <div class="flex-shrink-0"><i class="fa-solid fa-circle-check text-[#FF0000] text-xl mr-4 mt-1"></i></div>
+                                <i class="fa-solid fa-circle-check text-[#FF0000] text-xl mr-4 mt-1 flex-shrink-0" aria-hidden="true"></i>
                                 <div><strong class="text-gray-900 block">PROFISSIONAIS QUALIFICADOS</strong><span>Nossa equipe possui vasta experiência e está em constante treinamento para cuidar do seu caminhão com a máxima eficiência.</span></div>
                             </li>
                              <li class="flex items-start text-left">
-                                <div class="flex-shrink-0"><i class="fa-solid fa-circle-check text-[#FF0000] text-xl mr-4 mt-1"></i></div>
-                                <div><strong class="text-gray-900 block">SERVIÇO DE LEVA E TRAZ</strong><span>Para sua maior comodidade, oferecemos o serviço de busca e entrega do seu veículo em Chapecó.</span></div>
+                                 <i class="fa-solid fa-circle-check text-[#FF0000] text-xl mr-4 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                 <div><strong class="text-gray-900 block">SERVIÇO DE LEVA E TRAZ</strong><span>Para sua maior comodidade, oferecemos o serviço de busca e entrega do seu veículo em Chapecó.</span></div>
                             </li>
                              <li class="flex items-start text-left">
-                                <div class="flex-shrink-0"><i class="fa-solid fa-circle-check text-[#FF0000] text-xl mr-4 mt-1"></i></div>
-                                <div><strong class="text-gray-900 block">SOCORRO 24 HORAS</strong><span>Não te deixamos na mão. Conte com nosso atendimento emergencial a qualquer hora do dia ou da noite.</span></div>
+                                 <i class="fa-solid fa-circle-check text-[#FF0000] text-xl mr-4 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                 <div><strong class="text-gray-900 block">SOCORRO 24 HORAS</strong><span>Não te deixamos na mão. Conte com nosso atendimento emergencial a qualquer hora do dia ou da noite.</span></div>
                             </li>
                              <li class="flex items-start text-left">
-                                <div class="flex-shrink-0"><i class="fa-solid fa-circle-check text-[#FF0000] text-xl mr-4 mt-1"></i></div>
-                                <div><strong class="text-gray-900 block">ESTRUTURA COMPLETA</strong><span>Dispomos de equipamentos modernos e um espaço totalmente preparado para realizar todos os tipos de reparo.</span></div>
+                                 <i class="fa-solid fa-circle-check text-[#FF0000] text-xl mr-4 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                 <div><strong class="text-gray-900 block">ESTRUTURA COMPLETA</strong><span>Dispomos de equipamentos modernos e um espaço totalmente preparado para realizar todos os tipos de reparo.</span></div>
                             </li>
                         </ul>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="sc.avif" alt="Oficina SC Mecânica" class="rounded-2xl shadow-2xl w-full h-full object-cover max-h-[500px]" onerror="this.src='https://placehold.co/600x500/cccccc/333333?text=SC+Mecânica'">
+                        <img src="sc.avif" alt="Oficina SC Mecânica" width="600" height="500" loading="lazy" class="rounded-2xl shadow-2xl w-full h-full object-cover max-h-[500px]" onerror="this.src='https://placehold.co/600x500/cccccc/333333?text=SC+Mecânica'">
                     </div>
                 </div>
             </div>
@@ -305,12 +324,12 @@
                 <h2 class="section-title text-center mb-12">Marcas que <span class="text-[#FF0000]">Trabalhamos</span></h2>
                 <div class="swiper-container-brands">
                     <div class="swiper-wrapper flex items-center">
-                        <div class="swiper-slide"><img src="Logo-Volvo.png.webp" alt="Volvo" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Volvo'"></div>
-                        <div class="swiper-slide"><img src="Logo-Iveco.png.webp" alt="Iveco" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Iveco'"></div>
-                        <div class="swiper-slide"><img src="Logo-Volkswagen.png.webp" alt="Volkswagen" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Volkswagen'"></div>
-                        <div class="swiper-slide"><img src="Logo-Ford.png.webp" alt="Ford" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Ford'"></div>
-                        <div class="swiper-slide"><img src="Logo-Mercedes-Benz.png.webp" alt="Mercedes-Benz" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Mercedes'"></div>
-                        <div class="swiper-slide"><img src="Logo-Scania.png.webp" alt="Scania" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Scania'"></div>
+                        <div class="swiper-slide"><img src="Logo-Volvo.png.webp" alt="Logo Volvo" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Volvo'"></div>
+                        <div class="swiper-slide"><img src="Logo-Iveco.png.webp" alt="Logo Iveco" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Iveco'"></div>
+                        <div class="swiper-slide"><img src="Logo-Volkswagen.png.webp" alt="Logo Volkswagen" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Volkswagen'"></div>
+                        <div class="swiper-slide"><img src="Logo-Ford.png.webp" alt="Logo Ford" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Ford'"></div>
+                        <div class="swiper-slide"><img src="Logo-Mercedes-Benz.png.webp" alt="Logo Mercedes-Benz" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Mercedes'"></div>
+                        <div class="swiper-slide"><img src="Logo-Scania.png.webp" alt="Logo Scania" width="200" height="100" loading="lazy" class="mx-auto h-20 object-contain" onerror="this.src='https://placehold.co/200x100/FFFFFF/000000?text=Scania'"></div>
                     </div>
                 </div>
             </div>
@@ -319,18 +338,18 @@
         <!-- ===== Avaliações do Google ===== -->
         <section id="avaliacoes" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-4">
-                 <a href="https://g.co/kgs/aUW3WNS" target="_blank" class="flex flex-col items-center justify-center gap-4 mb-12">
-                     <h2 class="section-title text-center">Avaliações de Nossos <span class="text-[#FF0000]">Clientes</span></h2>
-                     <div class="flex items-center gap-4">
-                        <div class="flex items-center gap-1">
-                            <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
-                        </div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo do Google" class="h-10 md:h-12">
-                     </div>
+                 <a href="https://g.co/kgs/aUW3WNS" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center gap-4 mb-12">
+                      <h2 class="section-title text-center">Avaliações de Nossos <span class="text-[#FF0000]">Clientes</span></h2>
+                      <div class="flex items-center gap-4">
+                          <div class="flex items-center gap-1" aria-label="Avaliação de 5 de 5 estrelas">
+                              <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl" aria-hidden="true"></i>
+                              <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl" aria-hidden="true"></i>
+                              <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl" aria-hidden="true"></i>
+                              <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl" aria-hidden="true"></i>
+                              <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl" aria-hidden="true"></i>
+                          </div>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo do Google" width="48" height="48" loading="lazy" class="h-10 md:h-12">
+                      </div>
                  </a>
                 <div class="swiper-container-reviews">
                     <div class="swiper-wrapper" id="reviews-wrapper">
@@ -347,13 +366,13 @@
                 <div>
                     <h4 class="font-bebas text-2xl text-white tracking-wider mb-4">CONTATO E HORÁRIOS</h4>
                     <div class="space-y-3">
-                        <p><i class="fa-brands fa-whatsapp mr-2 text-[#FF0000]"></i><a href="tel:+5549988557543" class="hover:text-white">(49) 98855-7543</a> (WhatsApp)</p>
-                        <p><i class="fa-solid fa-phone mr-2 text-[#FF0000]"></i><a href="tel:+5549999495333" class="hover:text-white">(49) 99949-5333</a></p>
-                        <p><i class="fa-solid fa-wallet mr-2 text-[#FF0000]"></i><a href="tel:+5549999811410" class="hover:text-white">(49) 99981-1410</a> (Financeiro)</p>
-                        <p><i class="fa-solid fa-envelope mr-2 text-[#FF0000]"></i><a href="mailto:scmecanicaautopecas@gmail.com" class="hover:text-white">scmecanicaautopecas@gmail.com</a></p>
-                        <p><i class="fa-solid fa-location-dot mr-2 text-[#FF0000]"></i>R. Arlindo Agne, 713 - Lajeado, Chapecó - SC</p>
+                        <p><i class="fa-brands fa-whatsapp mr-2 text-[#FF0000]" aria-hidden="true"></i><a href="tel:+5549988557543" class="hover:text-white">(49) 98855-7543</a> (WhatsApp)</p>
+                        <p><i class="fa-solid fa-phone mr-2 text-[#FF0000]" aria-hidden="true"></i><a href="tel:+5549999495333" class="hover:text-white">(49) 99949-5333</a></p>
+                        <p><i class="fa-solid fa-wallet mr-2 text-[#FF0000]" aria-hidden="true"></i><a href="tel:+5549999811410" class="hover:text-white">(49) 99981-1410</a> (Financeiro)</p>
+                        <p><i class="fa-solid fa-envelope mr-2 text-[#FF0000]" aria-hidden="true"></i><a href="mailto:scmecanicaautopecas@gmail.com" class="hover:text-white">scmecanicaautopecas@gmail.com</a></p>
+                        <p><i class="fa-solid fa-location-dot mr-2 text-[#FF0000]" aria-hidden="true"></i>R. Arlindo Agne, 713 - Lajeado, Chapecó - SC</p>
                          <div class="pt-2">
-                             <p class="font-bold text-white mb-2"><i class="fa-solid fa-clock mr-2 text-[#FF0000]"></i>Horário de funcionamento:</p>
+                             <p class="font-bold text-white mb-2"><i class="fa-solid fa-clock mr-2 text-[#FF0000]" aria-hidden="true"></i>Horário de funcionamento:</p>
                              <ul class="text-sm text-gray-400 pl-6">
                                  <li>Segunda a Sexta: 09:00 – 18:00</li>
                                  <li>Sábado: 09:00 – 13:00</li>
@@ -363,66 +382,81 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center">
-                     <img src="SC Mecanica.avif" alt="SC Mecânica Diesel Logo" class="h-24 mb-4" onerror="this.style.display='none'">
+                     <img src="SC Mecanica.avif" alt="SC Mecânica Diesel Logo" width="96" height="96" loading="lazy" class="h-24 mb-4" onerror="this.style.display='none'">
                      <p class="text-sm text-gray-400 mb-4">Siga-nos nas redes sociais</p>
                      <div class="flex gap-6">
-                         <a href="https://www.instagram.com/scmecanica_autopecas" target="_blank" class="text-3xl hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                         <a href="https://wa.me/554988557543" target="_blank" class="text-3xl hover:text-green-500 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                         <a href="https://www.instagram.com/scmecanica_autopecas" target="_blank" rel="noopener noreferrer" class="text-3xl hover:text-pink-500 transition-colors" aria-label="Instagram da SC Mecânica"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                         <a href="https://wa.me/554988557543" target="_blank" rel="noopener noreferrer" class="text-3xl hover:text-green-500 transition-colors" aria-label="WhatsApp da SC Mecânica"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
                      </div>
                 </div>
                 <div>
                     <h4 class="font-bebas text-2xl text-white tracking-wider mb-4">NOSSA LOCALIZAÇÃO</h4>
                     <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.932821217731!2d-52.65171788812676!3d-27.1272099946408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b5e828a2a573%3A0x4a4f8f4a3390c5d2!2sR.%20Arlindo%20Agne%2C%20713%20-%20Lajeado%2C%20Chapec%C3%B3%20-%20SC%2C%2089804-848!5e0!3m2!1spt-BR!2sbr!4v1719262118465!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       <iframe title="Localização da SC Mecânica Diesel no Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.932821217731!2d-52.65171788812676!3d-27.1272099946408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b5e828a2a573%3A0x4a4f8f4a3390c5d2!2sR.%20Arlindo%20Agne%2C%20713%20-%20Lajeado%2C%20Chapec%C3%B3%20-%20SC%2C%2089804-848!5e0!3m2!1spt-BR!2sbr!4v1719262118465!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
             <div class="mt-12 border-t border-gray-700 py-6">
-                <p class="text-center text-xs text-gray-500">&copy; 2025 SC Mecânica Diesel. Todos os direitos reservados. | CNPJ: <a href="https://cnpj.biz/40157842000176" target="_blank" class="hover:text-white">40.157.842/0001-76</a></p>
+                <p class="text-center text-xs text-gray-500">&copy; <span id="current-year"></span> SC Mecânica Diesel. Todos os direitos reservados. | CNPJ: <a href="https://cnpj.biz/40157842000176" target="_blank" rel="noopener noreferrer" class="hover:text-white">40.157.842/0001-76</a></p>
             </div>
         </footer>
     </main>
 </div>
 
     <!-- Botão Flutuante do WhatsApp -->
-    <a href="https://wa.me/554988557543" target="_blank" class="whatsapp-float fixed bottom-5 right-5 bg-[#25D366] w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg z-40 transition-transform hover:scale-110">
-        <i class="fa-brands fa-whatsapp fa-2x"></i>
+    <a href="https://wa.me/554988557543" target="_blank" rel="noopener noreferrer" class="whatsapp-float fixed bottom-5 right-5 bg-[#25D366] w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg z-40 transition-transform hover:scale-110" aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp fa-2x" aria-hidden="true"></i>
     </a>
 
-    <!-- Swiper's JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuButton = document.getElementById('menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            
+    <!-- Swiper's JS (carregado com defer) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    
+    <!-- Scripts da Página -->
+    <script defer>
+      document.addEventListener('DOMContentLoaded', function() {
+        // --- Atualização do Ano no Footer ---
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // --- Menu Mobile ---
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        
+        if (menuButton) {
             menuButton.addEventListener('click', () => {
+                const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
                 mobileMenu.classList.toggle('hidden');
                 menuIcon.classList.toggle('fa-bars');
                 menuIcon.classList.toggle('fa-xmark');
+                menuButton.setAttribute('aria-expanded', !isExpanded);
             });
+        }
 
-            document.querySelectorAll('.nav-link-mobile').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                    menuIcon.classList.add('fa-bars');
-                    menuIcon.classList.remove('fa-xmark');
-                });
+        document.querySelectorAll('.nav-link-mobile').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.add('fa-bars');
+                menuIcon.classList.remove('fa-xmark');
+                menuButton.setAttribute('aria-expanded', 'false');
             });
+        });
 
+        // --- Inicialização do Swiper ---
+        if (typeof Swiper !== 'undefined') {
+            // Swiper para Marcas
             new Swiper('.swiper-container-brands', {
-                loop: true, 
-                slidesPerView: 3, 
-                spaceBetween: 20, 
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 20,
                 autoplay: { delay: 2500, disableOnInteraction: false },
-                breakpoints: { 
-                    640: { slidesPerView: 4 }, 
-                    768: { slidesPerView: 5 }, 
-                    1024: { slidesPerView: 6 } 
+                breakpoints: {
+                    640: { slidesPerView: 4 },
+                    768: { slidesPerView: 5 },
+                    1024: { slidesPerView: 6 }
                 }
             });
 
+            // Swiper para Serviços
             new Swiper('.swiper-container-servicos', {
                 loop: true,
                 slidesPerView: 1,
@@ -436,35 +470,30 @@
                     clickable: true,
                 },
                 breakpoints: {
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 20
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 30
-                    },
+                    640: { slidesPerView: 2, spaceBetween: 20 },
+                    1024: { slidesPerView: 3, spaceBetween: 30 }
                 }
             });
-
+            
+            // Swiper para Avaliações
             const reviews = [
-                { name: "Guilherme Medeiros", avatar: "", stars: 5, date: "1 semana atrás", text: "Empresa tem um compromisso claro com a qualidade e a satisfação do cliente. É uma empresa que superou nossas expectativas. Recomendo." },
-                { name: "Daniel Anziliero", avatar: "", stars: 5, date: "1 semana atrás", text: "Ótimo atendimento, e serviço de excelência de toda a equipe SC mecânica." },
-                { name: "Eduardo Bringhenti", avatar: "", stars: 5, date: "2 semanas atrás", text: "Atendimento excelente e serviço de alta qualidade! A equipe da SC Mecânica é muito profissional, ágil e sempre busca a melhor solução. Recomendo fortemente!" },
-                { name: "Wilk Biazotto", avatar: "", stars: 5, date: "1 mês atrás", text: "Pra quem precisa de solução, Silvonei e os guri dão um jeito, o preço é alto, mas justos, pois esse resolve!!!" },
-                { name: "Jucemar De Souza", avatar: "", stars: 5, date: "1 mês atrás", text: "Recomendo ótimo atendimento" },
-                { name: "Douglas Tormen", avatar: "", stars: 5, date: "3 meses atrás", text: "Serviço de qualidade e o pessoal e bem atencioso." },
-                { name: "Vanderlei Da Silva", avatar: "", stars: 5, date: "2 anos atrás", text: "Ótimo lugar para manutenção do seu caminhao" },
-                { name: "Daian Schmitt", avatar: "", stars: 5, date: "6 meses atrás", text: "Serviço de primeira qualidade, recomendo!" }
+                { name: "Guilherme Medeiros", stars: 5, date: "1 semana atrás", text: "Empresa tem um compromisso claro com a qualidade e a satisfação do cliente. É uma empresa que superou nossas expectativas. Recomendo." },
+                { name: "Daniel Anziliero", stars: 5, date: "1 semana atrás", text: "Ótimo atendimento, e serviço de excelência de toda a equipe SC mecânica." },
+                { name: "Eduardo Bringhenti", stars: 5, date: "2 semanas atrás", text: "Atendimento excelente e serviço de alta qualidade! A equipe da SC Mecânica é muito profissional, ágil e sempre busca a melhor solução. Recomendo fortemente!" },
+                { name: "Wilk Biazotto", stars: 5, date: "1 mês atrás", text: "Pra quem precisa de solução, Silvonei e os guri dão um jeito, o preço é alto, mas justos, pois esse resolve!!!" },
+                { name: "Jucemar De Souza", stars: 5, date: "1 mês atrás", text: "Recomendo ótimo atendimento" },
+                { name: "Douglas Tormen", stars: 5, date: "3 meses atrás", text: "Serviço de qualidade e o pessoal e bem atencioso." },
+                { name: "Vanderlei Da Silva", stars: 5, date: "2 anos atrás", text: "Ótimo lugar para manutenção do seu caminhao" },
+                { name: "Daian Schmitt", stars: 5, date: "6 meses atrás", text: "Serviço de primeira qualidade, recomendo!" }
             ];
-
+            
             const reviewsWrapper = document.getElementById('reviews-wrapper');
-            if(reviewsWrapper){
+            if (reviewsWrapper) {
                 reviews.forEach(review => {
-                    let starsHTML = Array(5).fill(0).map((_, i) => `<i class="fa-solid fa-star ${i < review.stars ? 'text-yellow-400' : 'text-gray-600'}"></i>`).join('');
-                    const reviewHTML = `
+                    let starsHTML = Array(5).fill(0).map((_, i) => `<i class="fa-solid fa-star ${i < review.stars ? 'text-yellow-400' : 'text-gray-300'}" aria-hidden="true"></i>`).join('');
+                    reviewsWrapper.innerHTML += `
                         <div class="swiper-slide h-auto">
-                            <div class="bg-gray-100 p-8 rounded-2xl text-left h-full flex flex-col shadow-2xl">
+                            <div class="bg-gray-100 p-8 rounded-2xl text-left h-full flex flex-col shadow-lg">
                                 <div class="flex items-center mb-4">
                                     <div class="flex-grow">
                                         <p class="font-bold text-gray-900">${review.name}</p>
@@ -472,21 +501,25 @@
                                     </div>
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo do Google" class="w-6 h-6 ml-auto">
                                 </div>
-                                <div class="mb-4">${starsHTML}</div>
+                                <div class="mb-4" role="img" aria-label="Avaliação de ${review.stars} de 5 estrelas">${starsHTML}</div>
                                 <p class="text-gray-600 italic flex-grow">"${review.text}"</p>
                             </div>
                         </div>`;
-                    reviewsWrapper.innerHTML += reviewHTML;
                 });
             }
-
+            
             new Swiper('.swiper-container-reviews', {
-                loop: true, slidesPerView: 1, spaceBetween: 30, autoplay: { delay: 5000, disableOnInteraction: false },
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                autoplay: { delay: 5000, disableOnInteraction: false },
                 pagination: { el: '.swiper-pagination-reviews', clickable: true },
                 breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
             });
-        });
+        } else {
+            console.error("Swiper não foi carregado.");
+        }
+      });
     </script>
 </body>
 </html>
-
