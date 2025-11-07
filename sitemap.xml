@@ -1,48 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-<!-- URL Principal -->
-<url>
-  <loc>https://www.scmecanica.com.br/</loc>
-  <lastmod>2024-05-21T18:00:00+00:00</lastmod>
-  <priority>1.00</priority>
-  <changefreq>monthly</changefreq>
-</url>
-
-<!-- Seção de Serviços -->
-<url>
-  <loc>https://www.scmecanica.com.br/#servicos</loc>
-  <lastmod>2024-05-21T18:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
-</url>
-
-<!-- Seção de Venda de Peças -->
-<url>
-  <loc>https://www.scmecanica.com.br/#novidade</loc>
-  <lastmod>2024-05-21T18:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
-</url>
-
-<!-- Seção Sobre / Diferenciais -->
-<url>
-  <loc>https://www.scmecanica.com.br/#sobre</loc>
-  <lastmod>2024-05-21T18:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
-</url>
-
-<!-- Seção de Contato / Footer -->
-<url>
-  <loc>https://www.scmecanica.com.br/#contato</loc>
-  <lastmod>2024-05-21T18:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-  <changefreq>yearly</changefreq>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Página Principal -->
+    <url>
+        <loc>https://scmecanica.com.br/</loc>
+        <lastmod>2025-11-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
